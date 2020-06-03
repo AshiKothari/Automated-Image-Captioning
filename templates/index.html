@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Automated Image Captioning</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<style>
+.heading{
+  font-weight: 450;
+  font-size: 3.5em;
+  text-shadow: 1px 1px 5px grey;
+}
+.text{
+  font-size: 32px;
+  font-style: italic;
+}
+img{
+  height: 240px;
+  width: 255px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+</style>
+  </head>
+  <body>
+  <div >
+
+          <div id="sticky-footer" class="py-4 bg-dark text-white-50">
+            <div class="container text-white text-shadow: 1px 1px 10px white">
+             <h4 class="heading"> Image Captioning </h4>
+               <h5> Hey! Upload your image to generate a caption...</h5>
+           </div>
+         </div>
+         <p>
+
+
+         <form class="container form-inline" method="POST" action="/" enctype="multipart/form-data">
+           <label><b> Image: &nbsp;&nbsp;</b></label>
+           <input class="form-control" type="file" name="userfile" placeholder="Image Please :)">
+           <button type="submit" class="btn btn-primary"> Submit </button>
+         </form></p>
+
+     {% if cap %}
+    <div class="row">
+        <div class="col-sm-4">
+          <div class="container">
+          <img src="{{cap['image']}}" align="right"><br>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <p><h4><span class="badge badge-danger">Generated caption:</span></h4> </p>
+          <p> <b><h5>{{cap['caption']}}</h5>  </b> </p>
+        </div>
+    </div>
+    {% endif %}
+<br>
+     <div class="footer">
+        <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+               <div class="container text-center text-white">
+                <p style="color: #357EC7">Ashi Kothari |
+                 <a href="https://github.com/AshiKothari" target="_blank">Github | </a>
+                 <a href="https://www.linkedin.com/in/ashi-kothari/" target="_blank">Linkedin | </a>
+                 <a href="https://github.com/AshiKothari/Automated-Image-Captioning" target="_blank">Code </a></p>
+                 <div class="container text-center text-white">
+                   Contact: +91-7023679830 <br>
+                   Email: ashikothari10@gmail.com
+                 </div>
+               </div>
+             </footer>
+    </div>
+ </div>
+</html>
