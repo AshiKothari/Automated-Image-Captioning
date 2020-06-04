@@ -1,7 +1,5 @@
 from flask import Flask, render_template, redirect, request
 import caption_it
-# import keras.backend.tensorflow_backend as tb
-# tb._SYMBOLIC_SCOPE.value = True
 
 app = Flask(__name__)
 
