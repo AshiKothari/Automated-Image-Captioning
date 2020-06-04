@@ -2,8 +2,7 @@ numpy
 pandas
 scikit-learn
 matplotlib
-keras
-string 
+keras 
 json
 pickle
 Click==7.0
