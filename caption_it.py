@@ -12,7 +12,7 @@ import keras
 #import re
 #import nltk
 #from nltk.corpus import stopwords
-import string
+#import string
 import json
 #from time import time
 import pickle
