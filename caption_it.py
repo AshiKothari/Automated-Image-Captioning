@@ -9,12 +9,12 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import keras
-import re
-import nltk
-from nltk.corpus import stopwords
+#import re
+#import nltk
+#from nltk.corpus import stopwords
 import string
 import json
-from time import time
+#from time import time
 import pickle
 from keras.applications.vgg16 import VGG16
 from keras.applications.resnet50 import ResNet50, preprocess_input, decode_predictions
@@ -24,13 +24,14 @@ from keras.preprocessing.sequence import pad_sequences
 from keras.utils import to_categorical
 from keras.layers import Input, Dense, Dropout, Embedding, LSTM
 from keras.layers.merge import add
-from keras.callbacks import EarlyStopping
-from keras import backend as K
-import tensorflow as tf
+#from keras.callbacks import EarlyStopping
+#from keras import backend as K
+#import tensorflow as tf
 
-tf.compat.v1.enable_eager_execution()
-K.clear_session()
-tf.compat.v1.reset_default_graph()
+#tf.compat.v1.enable_eager_execution()
+#K.clear_session()
+#tf.compat.v1.reset_default_graph()
+
 # import tensorflow.compat.v1 as tf
 # tf.disable_v2_behavior()
 # x = tf.placeholder(shape=[None, 2], dtype=tf.float32)
