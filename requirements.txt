@@ -1,9 +1,6 @@
 numpy
 pandas
-scikit-learn
-matplotlib
 keras 
-tensorflow
 Click==7.0
 Flask==1.1.1
 gunicorn==19.9.0
